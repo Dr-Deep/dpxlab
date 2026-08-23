@@ -1,0 +1,22 @@
+name: go-test
+
+on:
+  push:
+    branches: [ "prod" ]
+  pull_request:
+    branches: [ "prod" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v7
+
+    - name: Test
+      run: go test -v .
+
+    - name: Build
+      run: go build -v .
