@@ -1,0 +1,17 @@
+name: deploy
+
+on:
+  push:
+    branches: [ "prod" ]
+
+  pull_request:
+    branches: [ "prod" ]
+
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    needs: ["go-lint", "go-test"]
+    runs-on: ubuntu-slim
