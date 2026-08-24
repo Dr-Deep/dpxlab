@@ -22,4 +22,5 @@ jobs:
         go-version-file: 'go.mod'
         cache: true
 
-    - uses: golangci/golangci-lint-action@6
+    - uses: golangci/golangci-lint-action@9
+      with: version: "latest"
