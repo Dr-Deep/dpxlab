@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Error: {{ .ErrorType }}</title>
+  <meta property="og:title" content="dpxlab.de {{ .ErrorType }}">
+  <meta property="og:description" content="kirby's infra">
+  <meta property="og:url" content="https://dpxlab.de/">
+
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <style>
+  </style>
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  <div class="message">
+    <h1>{{ .ErrorType }}</h1>
+    <p>{{ .ErrorMessage }}</p>
+    <p><a href="/">Zurück</a></p>
+  </div>
+
+  <script>
+  </script>
+</body>
+</html>
