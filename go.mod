@@ -6,6 +6,7 @@ require (
 	cloud.google.com/go v0.123.0
 	github.com/Dr-Deep/logging-go v0.0.0-20251002044224-80833ccb7b99
 	github.com/go-git/go-git/v6 v6.0.0-alpha.5
+	github.com/mattn/go-sqlite3 v1.14.50
 	gopkg.in/yaml.v3 v3.0.1
 )
 

@@ -1,0 +1,40 @@
+# This file contains all available configuration options
+# with their default values (in comments).
+#
+# This file is not a configuration example,
+# it contains the exhaustive configuration with explanations of the options.
+
+# Defines the configuration version.
+# The only possible value is "2".
+version: "2"
+
+linters:
+  default: all
+
+  # Disable specific linters.
+  disable:
+    - errcheck
+    - depguard
+    - exhaustruct
+    - gochecknoglobals
+    - godot
+    - gochecknoinits
+    - varnamelen
+
+  # All available settings of specific linters.
+  settings:
+    gocyclo:
+      # Minimal code complexity to report.
+      # Default: 30 (but we recommend 10-20)
+      min-complexity: 10
+
+    misspell:
+      # Correct spellings using locale preferences for US or UK.
+      # Setting locale to US will correct the British spelling of 'colour' to 'color'.
+      # Default is to use a neutral variety of English.
+      locale: US
+
+    nestif:
+      # Minimal complexity of if statements to report.
+      # Default: 5
+      min-complexity: 4
